@@ -19,7 +19,7 @@ def coffee_machine():
             if resources["water"] >= 50 and resources["coffee"] >= 18:
                 quarters = input("How many quarters would you like to deposit?\n")
                 quarters_total = int(quarters) * .25
-                if quarters_total >= (MENU[user_input]["cost"])
+                if quarters_total >= (MENU[user_input]["cost"]):
                     resources["water"] -= 50
                     resources["coffee"] -= 18
                     print("Here is your espresso; enjoy!")
